@@ -13,6 +13,7 @@
   "license": "MIT",
   "dependencies": {
     "fastify": "^2.1.0",
+    "fastify-http-proxy": "^2.0.3",
     "restify": "^8.2.0"
   }
 }
