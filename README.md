@@ -35,3 +35,5 @@ A challenge password []:
 
 1. `npm run start`
 2. Go to [https://localhost:3000](https://localhost:3000)
+
+> Your browser will automatically tell you that the url is unsafe. This is normal with self signed certificates.
