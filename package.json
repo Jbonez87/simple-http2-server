@@ -1,0 +1,12 @@
+{
+  "name": "simple-http2-server",
+  "version": "1.0.0",
+  "description": "a simple http2 server for learning purposes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "John Castrillon",
+  "license": "MIT"
+}
