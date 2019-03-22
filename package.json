@@ -5,8 +5,12 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "start": "node index.js",
+    "start:fastify": "node server-fastify.js"
   },
   "author": "John Castrillon",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "fastify": "^2.1.0"
+  }
 }
