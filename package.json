@@ -9,7 +9,8 @@
     "start:fastify": "node server-fastify.js",
     "start:restify": "node server-restify.js",
     "start:proxy": "node server-proxy.js",
-    "start:html": "node server-html.js"
+    "start:html": "node server-html.js",
+    "start:websockets": "node server-websockets.js"
   },
   "author": "John Castrillon",
   "license": "MIT",
