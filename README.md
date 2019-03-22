@@ -34,4 +34,4 @@ A challenge password []:
 ## Running the server locally
 
 1. `npm run start`
-2. Go to [https://localhost:3000]
+2. Go to [https://localhost:3000](https://localhost:3000)
