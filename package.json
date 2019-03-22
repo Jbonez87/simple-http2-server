@@ -6,11 +6,13 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
-    "start:fastify": "node server-fastify.js"
+    "start:fastify": "node server-fastify.js",
+    "start:restify": "node server-restify.js"
   },
   "author": "John Castrillon",
   "license": "MIT",
   "dependencies": {
-    "fastify": "^2.1.0"
+    "fastify": "^2.1.0",
+    "restify": "^8.2.0"
   }
 }
