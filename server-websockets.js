@@ -23,3 +23,5 @@ wss.on('connection', ws => {
   ws.send('something');
 });
 
+server.listen(3000);
+
