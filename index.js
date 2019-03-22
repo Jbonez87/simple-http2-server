@@ -5,7 +5,7 @@ const options = {
   key: fs.readFileSync(__dirname + '/server.key'),
   cert: fs.readFileSync(__dirname + '/server.crt')
 }
-console.log('test');
+
 const server = http2.createSecureServer(options);
 
 server.on('stream', (stream, headers) => {
