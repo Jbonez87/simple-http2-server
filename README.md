@@ -10,7 +10,7 @@
 ## You'll be prompted to answer the following questions
 
 ```
-  You are about to be asked to enter information that will be incorporated
+You are about to be asked to enter information that will be incorporated
 into your certificate request.
 What you are about to enter is what is called a Distinguished Name or a DN.
 There are quite a few fields but you can leave some blank
