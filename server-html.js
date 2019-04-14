@@ -7,9 +7,13 @@ const options = {
 }
 
 const server = http2.createSecureServer(options);
+server.on('error', (err) => console.error(err));
 
 server.on('stream', stream => {
-  stream.respondWithFile('./index.html');
+  stream.respondWithFile(__dirname + '/index.html', {
+    "content-type": "text/html",
+    ":status": 200
+  });
 });
 
-server.listen(3000);
+server.listen(3000, () => console.log('listening on port 3000'));
