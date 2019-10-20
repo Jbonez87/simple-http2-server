@@ -3,3 +3,5 @@ server.csr
 server.key
 node_modules/
 yarn.lock
+.gitignore
+*.pem

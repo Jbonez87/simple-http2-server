@@ -3,9 +3,8 @@ const restify = require('restify');
 
 const server = restify.createServer({
   http2: {
-    cert: fs.readFileSync(__dirname + '/server.crt'),
-    key: fs.readFileSync(__dirname + '/server.key'),
-    ca: fs.readFileSync(__dirname + '/server.csr'),
+    cert: fs.readFileSync(__dirname + '/localhost-cert.pem'),
+    key: fs.readFileSync(__dirname + '/localhost-privkey.pem'),
   }
 });
 
@@ -14,4 +13,4 @@ server.get('/', (req, res, next) => {
   next();
 });
 
-server.listen(3000);
+server.listen(3000, () => console.log('listening on port 3000'));

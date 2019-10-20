@@ -7,4 +7,4 @@ server.register(require('fastify-http-proxy'), {
   http2: true
 });
 
-server.listen(3000);
+server.listen(3000, () => console.log('listening on port 3000'));

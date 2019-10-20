@@ -1,39 +1,14 @@
 # HTTP2 Server Setup Guide
 
-## Create a certificate and key with the following commands
-
-1. `openssl genrsa -des3 -passout pass:x -out server.pass.key 2048`
-2. `openssl rsa -passin pass:x -in server.pass.key -out server.key`
-3. `rm server.pass.key`
-4. `openssl req -new -key server.key -out server.csr`
-
-## You'll be prompted to answer the following questions
+## Quick Start for Certificate and Key
 
 ```
-You are about to be asked to enter information that will be incorporated
-into your certificate request.
-What you are about to enter is what is called a Distinguished Name or a DN.
-There are quite a few fields but you can leave some blank
-For some fields there will be a default value,
-If you enter '.', the field will be left blank.
-
-Country Name (2 letter code) []:
-State or Province Name (full name) []:
-Locality Name (eg, city) []:
-Organization Name (eg, company) []:
-Organizational Unit Name (eg, section) []:
-Common Name (eg, fully qualified host name) []:  
-Email Address []:
-
-Please enter the following 'extra' attributes
-to be sent with your certificate request
-A challenge password []:
-
+openssl req -x509 -newkey rsa:2048 -nodes -sha256 -subj '/CN=localhost' \
+  -keyout localhost-privkey.pem -out localhost-cert.pem
 ```
 
-## Running the server locally
+## Running the server locally from terminal
 
-1. `npm run start`
-2. Go to [https://localhost:3000](https://localhost:3000)
-
-> Your browser will automatically tell you that the url is unsafe. This is normal with self signed certificates.
+1. `npm run start` (or whichever command you prefer from package.json)
+2. `node server-client.js` (run this in a separate terminal window)
+3. The console should return the response when running server-client file
