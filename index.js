@@ -8,6 +8,8 @@ const options = {
 
 const server = http2.createSecureServer(options);
 
+server.on('error', (err) => console.error(err));
+
 server.on('stream', (stream, headers) => {
   stream.respond({
     ':status': 200
