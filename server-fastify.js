@@ -12,4 +12,4 @@ fastify.get('/', (res, reply) => {
   reply.code(200).send({ hello: 'world' });
 });
 
-server.listen(3000, () => console.log('listening on port 3000'));
+fastify.listen(3000, () => console.log('listening on port 3000'));
